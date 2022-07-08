@@ -1,0 +1,133 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #e74c3c;
+}
+
+.bag {
+  width: 150px;
+  height: 200px;
+  background: #E3D0B9;
+  position: absolute;
+  margin: auto;
+  bottom: 10vh;
+  left: 2vw;
+  box-shadow: inset 0 -5px 0 0 #d4b895;
+  border-radius: 0 0 10px 10px;
+}
+.bag:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  border-bottom: 40px solid #eadccb;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 110px;
+  top: -40px;
+}
+.bag:after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  width: 110px;
+  height: 15px;
+  background: #dcc4a7;
+  background: repeating-linear-gradient(90deg, #d6c3af 0, #d6c3af 20%, #E3D0B9 20%, #E3D0B9 100%);
+  background-size: auto 0.1em;
+  left: 0;
+  right: 0;
+  top: -55px;
+}
+.bag:hover .cookie svg .crack {
+  transform: translate(50px, 30px);
+}
+.bag .label {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50px;
+  width: 100px;
+  min-height: 50px;
+  background: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+  border-radius: 10px;
+}
+.bag .label p {
+  margin: 0;
+  color: #666666;
+  text-align: center;
+  padding: 4px 4px 8px 4px;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 800;
+}
+.bag .sticker {
+  position: absolute;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  border: 1px solid #d62c1a;
+  border-radius: 5px;
+  padding: 0 4px;
+  bottom: 50px;
+  left: 20px;
+  background: #f29f97;
+  transform: rotate(-14deg);
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1);
+}
+.bag .sticker:before {
+  content: "";
+  width: 0;
+  height: 0;
+  background: #d62c1a;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 5px;
+  transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1);
+}
+.bag .sticker:hover {
+  border-radius: 5px 20px 5px 5px;
+}
+.bag .sticker:hover:before {
+  width: 15px;
+  height: 15px;
+}
+.bag .sticker a {
+  text-decoration: none;
+  color: #e74c3c;
+}
+.bag .cookie {
+  width: 100px;
+  position: absolute;
+  margin: auto;
+  right: -50px;
+  bottom: -30px;
+}
+.bag .cookie svg {
+  overflow: visible;
+}
+.bag .cookie svg .crack {
+  transform: translate(-2px, -2px);
+  transition: all 100ms cubic-bezier(0.25, 0.75, 0.5, 1);
+}
+.bag .piece {
+  width: 40px;
+  position: absolute;
+  margin: auto;
+  right: -65px;
+  bottom: -30px;
+}
